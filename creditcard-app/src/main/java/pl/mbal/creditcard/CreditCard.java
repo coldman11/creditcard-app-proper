@@ -22,4 +22,8 @@ class CreditCard {
     {
         return blocked;
     }
+       public void withdraw(int money)
+    {
+        this.limit = this.limit - money;
+    }
 }
