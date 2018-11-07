@@ -37,4 +37,14 @@ public class CreditCardTest {
         card.withdraw(400);
 
     }
+
+    @Test
+    public void canWithdrawMoney()
+    {
+        CreditCard card = new CreditCard();
+        card.assignLimit(2000);
+        card.withdraw(500);
+
+        Assert.assertEquals(1500,card.getLimit());
+    }
 }
